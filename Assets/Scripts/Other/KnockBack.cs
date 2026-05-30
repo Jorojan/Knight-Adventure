@@ -33,7 +33,7 @@ public class KnockBack : MonoBehaviour {
     }
 
     public void StopKnockBackMovement() {
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         IsGettingKnockedBack = false;
     }
 }

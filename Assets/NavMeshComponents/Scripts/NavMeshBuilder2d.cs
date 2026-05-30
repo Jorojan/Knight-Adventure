@@ -113,7 +113,10 @@ namespace NavMeshPlus.Extensions
                 foreach (var item in spriteMeshMap)
                 {
 #if UNITY_EDITOR
-                    Object.DestroyImmediate(item.Value);
+                    if (Application.isPlaying)
+                        Object.Destroy(item.Value);
+                    else
+                        Object.DestroyImmediate(item.Value);
 #else 
                     Object.Destroy(item.Value);
 #endif
@@ -121,7 +124,10 @@ namespace NavMeshPlus.Extensions
                 foreach (var item in coliderMeshMap)
                 {
 #if UNITY_EDITOR
-                    Object.DestroyImmediate(item.Value);
+                    if (Application.isPlaying)
+                        Object.Destroy(item.Value);
+                    else
+                        Object.DestroyImmediate(item.Value);
 #else
                     Object.Destroy(item.Value);
 #endif
