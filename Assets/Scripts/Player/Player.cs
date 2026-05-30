@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -16,6 +17,12 @@ public class Player : MonoBehaviour {
     [SerializeField] private float _movingSpeed = 5f;
     [SerializeField] private int _maxHealth = 10;
     [SerializeField] private float _damageRecoveryTime = 0.5f;
+    [Header("Dash Settings")]
+    [SerializeField] private int _dashSpeed = 4;
+    [SerializeField] private float _dashTime = 0.2f;
+    [SerializeField] private TrailRenderer _trailRenderer;
+    [SerializeField] private float _dashCoolDownTime = 1f;
+
     Vector2 inputVector;
 
     private Rigidbody2D _rb;
@@ -27,12 +34,15 @@ public class Player : MonoBehaviour {
     private int _currentHealth;
     private bool _canTakeDamage;
     private bool _isAlive;
+    private bool _isDashing;
+    private float _initialMovingSpeed;
 
 
     private void Awake() {
         Instantce = this;
         _rb = GetComponent<Rigidbody2D>();
         _knockBack = GetComponent<KnockBack>();
+        _initialMovingSpeed = _movingSpeed;
     }
 
     private void Start() {
@@ -40,6 +50,7 @@ public class Player : MonoBehaviour {
         _canTakeDamage = true;
         _isAlive = true;
         GameInpit.Instance.OnPlayerAttack += GameInput_OnPlayerAttack;
+        GameInpit.Instance.OnPlayerDash += GameInput_OnPlayerDash;
     }
 
     private void GameInput_OnPlayerAttack(object sender, System.EventArgs e) {
@@ -86,6 +97,28 @@ public class Player : MonoBehaviour {
 
             OnPlayerDeath?.Invoke(this, EventArgs.Empty);
         }
+    }
+
+    private void GameInput_OnPlayerDash(object sender, System.EventArgs e) {
+        Dash();
+    }
+
+    private IEnumerator DashRoutine() {
+        _isDashing = true;
+        _movingSpeed *= _dashSpeed;
+        _trailRenderer.emitting = true;
+        yield return new WaitForSeconds(_dashTime);
+
+        _trailRenderer.emitting = false;
+        _movingSpeed = _initialMovingSpeed;
+
+        yield return new WaitForSeconds(_dashCoolDownTime);
+        _isDashing = false;
+    }
+
+    private void Dash() {
+        if (!_isDashing) 
+        StartCoroutine(DashRoutine());
     }
 
     private IEnumerator DamageRecoveryRountine() {
