@@ -1,0 +1,21 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
+
+# Visual Studio
+*.csproj
+*.sln
+*.user
+*.suo
+*.vs/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
