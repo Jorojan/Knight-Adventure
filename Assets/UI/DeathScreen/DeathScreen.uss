@@ -1,0 +1,51 @@
+.death-overlay {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.death-panel {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.death-title {
+    font-size: 72px;
+    -unity-font-style: bold;
+    color: #c0392b;
+    -unity-letter-spacing: 12px;
+}
+
+.divider {
+    width: 100px;
+    height: 2px;
+    background-color: rgba(192, 57, 43, 0.4);
+    margin: 30px 0;
+}
+
+.death-button {
+    font-size: 20px;
+    -unity-font-style: bold;
+    width: 220px;
+    height: 48px;
+    margin-bottom: 12px;
+    background-color: rgba(192, 57, 43, 0.1);
+    color: #e74c3c;
+    border-radius: 4px;
+    border-color: rgba(192, 57, 43, 0.3);
+    border-width: 1px;
+    transition-duration: 0.2s;
+    transition-property: background-color, border-color;
+}
+
+.death-button:hover {
+    background-color: rgba(192, 57, 43, 0.25);
+    border-color: rgba(192, 57, 43, 0.6);
+}
+
+.death-button:active {
+    background-color: rgba(192, 57, 43, 0.1);
+    border-color: rgba(192, 57, 43, 0.3);
+}

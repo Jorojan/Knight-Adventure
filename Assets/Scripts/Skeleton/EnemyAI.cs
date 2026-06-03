@@ -105,7 +105,8 @@ public class EnemyAI : MonoBehaviour {
     }
 
     private void ChasingTarget() {
-        _navMeshAgent.SetDestination(Player.Instantce.transform.position);
+        if (Player.Instantce.IsAlive())
+            _navMeshAgent.SetDestination(Player.Instantce.transform.position);
     }
 
     public float GetRoamingAnimationSpeed() {
@@ -116,18 +117,17 @@ public class EnemyAI : MonoBehaviour {
         float distanceToPlayer = Vector3.Distance(transform.position, Player.Instantce.transform.position);
         State newState = State.Roaming;
 
-        if (_isChasingEnemy) {
-            if (distanceToPlayer <= _chasingDistance) {
-                newState = State.Chasing;
+        if (Player.Instantce.IsAlive()) {
+            if (_isChasingEnemy) {
+                if (distanceToPlayer <= _chasingDistance) {
+                    newState = State.Chasing;
+                }
             }
-        }
 
-        if (_isAttackingEnemy) {
-            if (distanceToPlayer <= _attackingDistance) {
-                if (Player.Instantce.IsAlive())
+            if (_isAttackingEnemy) {
+                if (distanceToPlayer <= _attackingDistance) {
                     newState = State.Attacking;
-                else 
-                    newState = State.Roaming;
+                }
             }
         }
 
@@ -162,7 +162,7 @@ public class EnemyAI : MonoBehaviour {
         if (Time.time > _nextCheckDirectionTime) {
             if(IsRunning) {
                 ChancheFacingDirection(_lastPosition, transform.position);
-            } else if (_currentState == State.Attacking) {
+            } else if (_currentState == State.Attacking && Player.Instantce.IsAlive()) {
                 ChancheFacingDirection(transform.position, Player.Instantce.transform.position);
             }
 

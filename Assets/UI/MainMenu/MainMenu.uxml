@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=9e409d570b4f26f42b7fea8b54f63e5a&amp;type=3#MainMenu"/>
+    <ui:VisualElement class="menu-container">
+        <ui:VisualElement class="overlay"/>
+        <ui:VisualElement name="Content" class="content">
+            <ui:Label text="KNIGHT" class="title-line"/>
+            <ui:Label text="ADVENTURE" class="title-line subtitle"/>
+            <ui:VisualElement class="divider"/>
+            <ui:VisualElement class="buttons-container">
+                <ui:Button text="Играть" name="PlayButton" class="menu-button"/>
+                <ui:Button text="Выйти" name="QuitButton" class="menu-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

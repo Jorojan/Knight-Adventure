@@ -141301,6 +141301,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7711612115999653548, guid: f14a239611f9e694ebe8a723f6a8ebf1, type: 3}
   m_PrefabInstance: {fileID: 496864909}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1399827147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1399827148}
+  m_Layer: 0
+  m_Name: DeathScreenUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1399827148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399827147}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.90828, y: 2.25007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2140179236}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1405805901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -162273,7 +162305,7 @@ Tilemap:
       - {fileID: 630609883, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -116086726, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -221640695, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 21, y: 3, z: 0}
@@ -162303,7 +162335,7 @@ Tilemap:
       - {fileID: -1023834568, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 306314479, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -277348675, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 25, y: 3, z: 0}
@@ -162333,7 +162365,7 @@ Tilemap:
       - {fileID: 630609883, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -116086726, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -221640695, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -31, y: 4, z: 0}
@@ -162373,7 +162405,7 @@ Tilemap:
       - {fileID: 630609883, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -116086726, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -221640695, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -16, y: 4, z: 0}
@@ -162383,7 +162415,7 @@ Tilemap:
       - {fileID: 1907855226, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 996185965, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1842080860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 18, y: 4, z: 0}
@@ -162483,7 +162515,7 @@ Tilemap:
       - {fileID: -1023834568, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 306314479, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -277348675, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -15, y: 5, z: 0}
@@ -162503,7 +162535,7 @@ Tilemap:
       - {fileID: 630609883, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -116086726, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -221640695, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 18, y: 5, z: 0}
@@ -162543,7 +162575,7 @@ Tilemap:
       - {fileID: 1907855226, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 996185965, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1842080860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -34, y: 6, z: 0}
@@ -162553,7 +162585,7 @@ Tilemap:
       - {fileID: 630609883, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -116086726, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -221640695, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -33, y: 6, z: 0}
@@ -162563,7 +162595,7 @@ Tilemap:
       - {fileID: 1837645988, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 325206324, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -696522617, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -21, y: 6, z: 0}
@@ -162913,7 +162945,7 @@ Tilemap:
       - {fileID: 271747334, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1469812897, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1027496494, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -33, y: 11, z: 0}
@@ -162983,7 +163015,7 @@ Tilemap:
       - {fileID: 67129052, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1483686900, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -781725910, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -17, y: 12, z: 0}
@@ -163033,7 +163065,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -31, y: 13, z: 0}
@@ -163093,7 +163125,7 @@ Tilemap:
       - {fileID: 271747334, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1469812897, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1027496494, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -31, y: 14, z: 0}
@@ -163113,7 +163145,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -29, y: 14, z: 0}
@@ -163163,7 +163195,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -24, y: 14, z: 0}
@@ -163203,7 +163235,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -20, y: 14, z: 0}
@@ -163213,7 +163245,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -19, y: 14, z: 0}
@@ -163263,7 +163295,7 @@ Tilemap:
       - {fileID: 67129052, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1483686900, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -781725910, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 30, y: 15, z: 0}
@@ -163273,7 +163305,7 @@ Tilemap:
       - {fileID: 271747334, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1469812897, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1027496494, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: 16, z: 0}
@@ -163293,7 +163325,7 @@ Tilemap:
       - {fileID: 271747334, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1469812897, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1027496494, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: 17, z: 0}
@@ -163353,7 +163385,7 @@ Tilemap:
       - {fileID: 271747334, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1469812897, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1027496494, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 16, y: 19, z: 0}
@@ -163363,7 +163395,7 @@ Tilemap:
       - {fileID: 67129052, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1483686900, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -781725910, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 31, y: 19, z: 0}
@@ -163433,7 +163465,7 @@ Tilemap:
       - {fileID: 1608921123, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -621455678, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1117272522, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 35, y: 20, z: 0}
@@ -163583,7 +163615,7 @@ Tilemap:
       - {fileID: -298120773, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1854046372, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 350741732, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 37, y: 23, z: 0}
@@ -163613,7 +163645,7 @@ Tilemap:
       - {fileID: -298120773, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1854046372, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 350741732, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 23, y: 24, z: 0}
@@ -163673,7 +163705,7 @@ Tilemap:
       - {fileID: 271747334, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1469812897, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1027496494, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 28, y: 25, z: 0}
@@ -163753,7 +163785,7 @@ Tilemap:
       - {fileID: -298120773, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1854046372, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 350741732, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 38, y: 26, z: 0}
@@ -163793,7 +163825,7 @@ Tilemap:
       - {fileID: 67129052, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1483686900, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -781725910, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 38, y: 27, z: 0}
@@ -163883,7 +163915,7 @@ Tilemap:
       - {fileID: 1502203061, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1690385574, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1673387630, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 31, y: 29, z: 0}
@@ -163953,7 +163985,7 @@ Tilemap:
       - {fileID: 506046805, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 2128887295, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -302286458, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 38, y: 30, z: 0}
@@ -164003,7 +164035,7 @@ Tilemap:
       - {fileID: 67129052, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1483686900, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -781725910, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 37, y: 31, z: 0}
@@ -164013,7 +164045,7 @@ Tilemap:
       - {fileID: 271747334, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1469812897, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1027496494, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 18, y: 32, z: 0}
@@ -164053,7 +164085,7 @@ Tilemap:
       - {fileID: 1502203061, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: 1690385574, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1673387630, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 32, y: 32, z: 0}
@@ -164073,7 +164105,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 34, y: 32, z: 0}
@@ -164093,7 +164125,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 36, y: 32, z: 0}
@@ -164103,7 +164135,7 @@ Tilemap:
       - {fileID: -1231091548, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1142073860, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
       - {fileID: -1445924742, guid: f51883fb39eddd94a8a3ae6b8d02256b, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 37, y: 32, z: 0}
@@ -166781,6 +166813,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96b23b9787c47aa418ae8fe1a81f9e8a, type: 3}
+--- !u!1 &2140179235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140179236}
+  - component: {fileID: 2140179238}
+  - component: {fileID: 2140179237}
+  m_Layer: 0
+  m_Name: UIDocument
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2140179236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140179235}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1399827148}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2140179237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140179235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b958c4c0713774d8038a578278cf2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathScreen
+--- !u!114 &2140179238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140179235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 087cdfa9476e31149b419e2b8897e390, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 63a0078cf42ee1e4db0f75305b3118b8, type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
 --- !u!1001 &2144372530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167024,3 +167124,4 @@ SceneRoots:
   - {fileID: 1687131945}
   - {fileID: 2060995647}
   - {fileID: 834642969}
+  - {fileID: 1399827148}

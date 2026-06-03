@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd">
+    <ui:Style src="DeathScreen.uss" />
+    <ui:VisualElement class="death-overlay">
+        <ui:VisualElement class="death-panel">
+            <ui:Label text="GAME OVER" class="death-title" />
+            <ui:VisualElement class="divider" />
+            <ui:Button text="Заново" class="death-button" name="RestartButton" />
+            <ui:Button text="Меню" class="death-button" name="MenuButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
