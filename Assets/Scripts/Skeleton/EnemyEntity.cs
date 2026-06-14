@@ -14,6 +14,7 @@ public class EnemyEntity : MonoBehaviour {
 
     public event EventHandler OnTakeHit;
     public event EventHandler OnDeath;
+    public static event EventHandler OnAnyEnemyDeath;
 
     //[SerializeField] private int _maxHealth;
     private int _currentHealth;
@@ -59,6 +60,7 @@ public class EnemyEntity : MonoBehaviour {
             _enemyAI.SetDeathState();
 
             OnDeath?.Invoke(this, EventArgs.Empty);
+            OnAnyEnemyDeath?.Invoke(this, EventArgs.Empty);
         }
     }
 

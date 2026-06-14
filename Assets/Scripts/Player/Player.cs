@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 
     public static Player Instantce { get; private set; }
     public event EventHandler OnPlayerDeath;
+    public event EventHandler OnPlayerDamaged;
     public event EventHandler OnFlashBlink;
 
     [SerializeField] private float _movingSpeed = 5f;
@@ -72,6 +73,9 @@ public class Player : MonoBehaviour {
 
     public bool IsAlive() => _isAlive;
 
+    public int GetMaxHealth() => _maxHealth;
+    public int GetCurrentHealth() => _currentHealth;
+
 
     public void TakeDamage(Transform damageSource, int damage) {
 
@@ -81,6 +85,7 @@ public class Player : MonoBehaviour {
             Debug.Log(_currentHealth);
             _knockBack.GetKnockedBack(damageSource);
 
+            OnPlayerDamaged?.Invoke(this, EventArgs.Empty);
             OnFlashBlink?.Invoke(this, EventArgs.Empty);
 
             StartCoroutine(DamageRecoveryRountine());
